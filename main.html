@@ -8,8 +8,32 @@
 
 <body>
 	<!-- the entire body must be written by student -->
+	<form action="">
+		<label for="First Name">First Name:</label>
+		<input type="text" id="First Name"/><br>
+		<label for="Last Name">Last Name:</label>
+		<input type="text" id="Last Name"/><br>
+		<label for="Phone Number">Phone Number:</label>
+		<input type="text" id="Phone Number"/><br>
+		<label for="Email ID">Email ID:</label>
+		<input type="text" id="Email ID"/><br>
+		<button type="submit" id="Submit" onclick="submit(event)">Submit</button>
+	</form>
     <script type="text/javascript" src="./script.js">
 </script>
+	<script>
+		function submit(event){
+			event.preventDefault();
+		var f_name=document.getElementById("First Name").value;
+		var l_name=document.getElementById("Last Name").value;
+		var P_number=document.getElementById("Phone Number").value;
+		var email=document.getElementById("Email ID").value;
+			alert("First Name: "+f_name+
+			"\nLast Name: "+l_name+
+			"\nPhone Number: "+P_number+
+			"\nEmail ID: "+email);
+		}
+	</script>
 
 </body>
 
